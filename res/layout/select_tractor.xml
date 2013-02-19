@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+   <!-- <TextView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="SECONDARY ACTIVITY"/>
+    <EditText android:id="@+id/txtSecondary"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnSecondary"
+            android:text="Click To Return to Main Activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>-->
+
+<!-- Screen Header: Select Tractor Type -->
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Drive Type: "
+        android:textColor="@color/text_rgb"
+        android:padding="12px"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+<!-- 2WD tractor Selection: (onClick main.xml) -->
+    <TextView
+        android:id="@+id/tv_2wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="2WD"
+        android:textColor="@color/text_rgb"
+        android:paddingBottom="8px" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+    <ImageButton
+        android:id="@+id/ib_2wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/two_wd" />
+    
+<!-- Frnt Assist tractor Selection: (onClick main.xml) -->
+    <TextView
+        android:id="@+id/tv_frntassist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        	android:text="Front Wheel Assist"
+        	android:textColor="@color/text_rgb"
+        android:paddingTop="8px"
+        android:paddingBottom="8px" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/ib_frntassist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/frnt_asst" />
+    
+<!-- 4WD tractor Selection: (onClick main.xml) -->
+    <TextView
+        android:id="@+id/tv_4wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        	android:text="4WD"
+        	android:textColor="@color/text_rgb"
+        android:paddingTop="8px"
+        android:paddingBottom="8px"
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/ib_4wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/four_wd" />
+
+
+<!--  Control Buttons on the bottom of screen -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.20" >
+        
+<!-- Exit App: (onClick cancel) -->
+        <ImageButton
+            android:id="@+id/ib_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/d_exit_up" />
+  
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+<!-- Return to previous: (onClick return) -->
+            
+<!-- Information: (onClick information.xml) -->
+            <ImageButton
+                android:id="@+id/ib_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/d_info_up" />
+
+            <ImageButton
+                android:id="@+id/ib_go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/ib_info"
+                android:src="@drawable/go_back" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

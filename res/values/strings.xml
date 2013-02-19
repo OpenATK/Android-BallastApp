@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="hello">Ballast Calc</string>
+    <!-- <string name="app_name">FarmerZach</string>-->
+    <string name="app_name">Purdue Tractor Ballast Calculator</string>
+    <color name="text_rgb">#FFCC00</color>
+    <dimen name="font_text_size">20sp</dimen>
+    <dimen name="btn_margin_b">8sp</dimen>
+    <dimen name="font_pad_l">20sp</dimen>
+    <dimen name="font_pad_b">8sp</dimen>
+	<dimen name="font_pad_t">8sp</dimen>
+	<dimen name="font_pad_r">8sp</dimen>
+    <dimen name="header_padding">2sp</dimen>
+ 	<dimen name= "header_text_size">20sp</dimen>
+	<dimen name="font_padding">8sp</dimen>
+	<dimen name="font_margin_r">20sp</dimen>
+	
+    
+<!-- Information Text: Application -->	
+	<color name="info_rgb">#CCCCCC</color>
+	<string name="info_text">    Purdue\'s Ballast Calculator is designed to improve work efficiency, tire wear, fuel consumption, and horsepower transfer by properly balancing weighted loads on the tractor\'s frame.</string>
+	<string name="tractor_text">Select the type of your tractor.</string>
+	<string name="implement_text">Select the appropriate implement type.</string>
+	<string name="hp_text">Input the PTO horse power rating for your tractor.</string>	
+	<string name="speed_text">Input the projected operating speed. (Typical range: 4 -8 MPH)</string>
+	
+<!-- Output variables -->
+	<dimen name="o_font_pad_t">8sp</dimen>
+	<dimen name="o_font_pad_l">20sp</dimen>
+	<dimen name="o_font_pad_r">20sp</dimen>
+	<string name="editTextError">This ballast calculator is applicable for tractors from 50 to 700 HP pulling soil engaging implments at typlical speeds of 3 to 10 MPH. Please change your inputs.</string><dimen name="o_font_pad_b">8sp</dimen>
+	
+    
+    
+
+</resources>

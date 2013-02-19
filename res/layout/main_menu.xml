@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal" >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="700dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal" >
+
+    <!-- Drive Type Section -->
+
+    <RelativeLayout
+        android:id="@+id/driveTypeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvTractor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:text="Tractor Type: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textColor="@color/text_rgb" />
+
+        <ImageButton
+            android:id="@+id/ib_info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/d_info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/driveTypeButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driveTypeHeader"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ib_2wdType"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="42dp"
+            android:background="@drawable/jd_2wd" />
+
+        <ImageButton
+            android:id="@+id/ib_fwdType"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/frnt_asst"/>
+
+        <ImageButton
+            android:id="@+id/ib_4wdType"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/four_wd" />
+
+        <!--
+         <LinearLayout
+	    android:id="@+id/driveTypeLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driveTypeButtons"
+        android:layout_centerHorizontal="true" >
+        -->
+
+
+        <!-- Drivetype Icon Text Box -->
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="125dp"
+            android:text="2WD"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/TextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ib_fwdType"
+            android:layout_centerHorizontal="true"
+            android:text="FWA"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/TextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/TextView4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="125dp"
+            android:text="4WD"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <!-- Implement Type Section -->
+
+    <LinearLayout
+        android:id="@+id/implementTypeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driveTypeButtons" >
+
+        <TextView
+            android:id="@+id/tvImplement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:text="Implement Mount Type: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textColor="@color/text_rgb" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/implementTypeButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/implementTypeHeader" >
+
+        <ImageButton
+            android:id="@+id/ib_towableType"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="42dp"
+            android:background="@drawable/tow" />
+
+        <ImageButton
+            android:id="@+id/ib_semiType"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/semimnt" />
+
+        <ImageButton
+            android:id="@+id/ib_fullyType"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/fullmnt" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="95dp"
+            android:text="Towed"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ib_semiType"
+            android:layout_centerHorizontal="true"
+            android:text="Semi-Mounted"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/TextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:text="Fully Mounted"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <!-- Info button -->
+
+
+    <!-- Calculate button -->
+
+    <RelativeLayout
+        android:id="@+id/calculateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mphLayout" >
+
+        <!-- <Button
+            android:id="@+id/b_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_speed"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/TextView1"
+            android:text="Calculate" /> -->
+    </RelativeLayout>
+
+    <!-- PTO Rating -->
+
+    <RelativeLayout
+        android:id="@+id/ptoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/implementTypeButtons" >
+
+        <TextView
+            android:id="@+id/ptoRating_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:text="PTO Rating (50 - 700 HP): "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp"
+            android:textColor="@color/text_rgb" />
+
+        <EditText
+            android:id="@+id/et_pto"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:inputType="number"
+            android:text="150" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mphLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ptoLayout"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/mph_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:text="Working Speed (3 - 10 MPH): "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp"
+            android:textColor="@color/text_rgb" />
+
+        <EditText
+            android:id="@+id/et_speed"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:inputType="numberDecimal"
+            android:text="5.5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/separater"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/mphLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/info_rgb"
+        android:paddingBottom="2dp"
+        android:paddingTop="5dp" >
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/resultsHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separater" >
+
+        <TextView
+            android:id="@+id/tvResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:text="Results"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="35sp"
+            android:textColor="@color/text_rgb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/outputImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultsHeaderLayout"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/TractorOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true" />
+        
+        <ImageView
+            android:id="@+id/WeightBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:layout_below="@+id/TractorOutput" />
+
+        <TextView
+            android:id="@+id/frontAxle_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TractorOutput"
+            android:layout_below="@+id/WeightBar"
+            android:text="Front Axle Weight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_rgb" />
+
+        <TextView
+            android:id="@+id/rearAxle_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WeightBar"
+            android:layout_alignLeft="@+id/TractorOutput"
+            android:text="Rear Axle Weight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_rgb" />
+
+        <TextView
+            android:id="@+id/rearAxle_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rearAxle_label"
+            android:layout_alignLeft="@+id/rearAxle_label"
+            android:layout_marginLeft="20dp"
+            android:text="%"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rearAxle_label"
+            android:layout_toRightOf="@+id/rearAxle_percent"
+            android:text="%"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/rearAxle_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rearAxle_label"
+            android:layout_alignLeft="@+id/rearAxle_label"
+            android:layout_marginLeft="60dp"
+            android:text="rear_lb"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/frontAxle_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frontAxle_label"
+            android:layout_alignLeft="@+id/frontAxle_label"
+            android:layout_marginLeft="20dp"
+            android:text="%"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frontAxle_label"
+            android:layout_toRightOf="@+id/frontAxle_percent"
+            android:text="%"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/frontAxle_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frontAxle_label"
+            android:layout_alignLeft="@+id/frontAxle_label"
+            android:layout_marginLeft="60dp"
+            android:text="frnt_lb"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rearAxle_lb"
+            android:layout_alignBottom="@+id/rearAxle_lb"
+            android:layout_toRightOf="@+id/rearAxle_lb"
+            android:text="lb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/frontAxle_lb"
+            android:layout_alignBottom="@+id/frontAxle_lb"
+            android:layout_toRightOf="@+id/frontAxle_lb"
+            android:text="lb" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/totalWeightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/outputImageLayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_totalWeightTargetLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:text="Total Weight Target:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp"
+            android:textColor="@color/text_rgb" />
+
+        <TextView
+            android:id="@+id/tv_TWT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:paddingBottom="@dimen/o_font_pad_b"
+            android:paddingTop="@dimen/o_font_pad_t"
+            android:text="TWT_val"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/totalWeightLayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_weightPowerRatioLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:text="Weight to Power Ratio:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp"
+            android:textColor="@color/text_rgb" />
+
+        <TextView
+            android:id="@+id/tv_WTPR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="@dimen/o_font_pad_b"
+            android:paddingTop="@dimen/o_font_pad_t"
+            android:text="WTPR_val"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lb/hp" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

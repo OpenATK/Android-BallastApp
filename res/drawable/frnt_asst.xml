@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:state_pressed="true"
+           android:drawable="@drawable/jd_fwa" /> <!-- pressed --><!--States flipped until I get the proper image from zac -->
+     <item android:state_focused="true"
+           android:drawable="@drawable/jd_fwa" /> <!-- focused -->
+     <item android:drawable="@drawable/jd_fwa" /> <!-- default -->
+</selector>
